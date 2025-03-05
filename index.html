@@ -40,6 +40,22 @@
             width: 100%;
             bottom: 0;
         }
+        .content {
+            display: flex;  
+            align-items: center;  
+            gap: 20px;  
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 300px; 
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -50,15 +66,43 @@
         <a href="#">首頁</a>
         <a href="#">關於我們</a>
         <a href="#">服務項目</a>
-        <a href="https://www.w3schools.com">聯絡我們</a>
+        <a href="https://www.w3schools.com">w3schools</a>
     </nav>
-    <main>
+
         <h2 style = "color:purple; font-size:25px;" >網站內容</h2>
         <p style = "text-decoration: underline;">這是一隻可愛的歐拉夫</p>
+
+    <div class="content">
         <img src="images.jpg" alt="olaf" width="208" height="284">
-    </main>
+        <table border="1">
+            <tr>
+                <th>商品</th>
+                <th>價格</th>
+            </tr>
+            <tr>
+                <td>歐拉夫玩偶</td>
+                <td>NT$500</td>
+            </tr>
+            <tr>
+                <td>歐拉夫吊飾</td>
+                <td>NT$300</td>
+            </tr>
+        </table>
+    </div>
+    <form action="#" method="post">
+        <label for="name">姓名：</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">電子郵件：</label>
+        <input type="email" id="email" name="email" required>
+    
+        <label for="message">留言：</label>
+        <textarea id="message" name="message"  required></textarea>
+    
+        <button type="submit">送出</button>
+    </form>
     <footer>
-        <p>&copy; 2023 我的網站. 版權所有.</p>
+        <p>&copy; ncu_course</p>
     </footer>
 </body> 
 </html>
